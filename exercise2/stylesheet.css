@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(230, 247, 247);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size:80px;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(230, 247, 247);
+    text-align: center;
+}
+.special-class {
+    color: rgb(230, 247, 247);
+    font-weight: bold;
+    background-color:rgb(20, 56, 56);
+    padding: 50px 20px 50px 20px; /*padding: 50 px 20px; */
+    margin: 100px 0;
+}
+
+h3 {
+    font-size:20px;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(96, 125, 125);
+    text-align: center;
+}
+
+h2 {
+    font-size:40px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(20, 56, 56);
+    text-align: center;
+
+}
+
+.number {
+    color: rgb(227, 18, 56);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 120px;
+
+
+}
+
+p {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(96, 125, 125);
+    text-align:center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
