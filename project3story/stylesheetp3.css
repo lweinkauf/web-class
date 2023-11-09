@@ -1,0 +1,675 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Great Vibes', cursive;
+}
+
+#intro {
+    background-image:url(images/0DCC5417-1EB3-45FC-8F0C-52AD991C91CD.jpeg);
+    background-size: cover;
+    width: 100%; /*could also write this as 100vw*/
+    height: 100vh;
+    height: 1500px;
+    /*adding the cover and 100 for width and height make it span the whole screen*/
+    background-position: center;
+}
+
+#title {
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*display, align, justify, we're making a flex area to center the title (child) in it horizontally and vertically*/
+    flex-direction: column; /*giving it a column so the title and author are on top and bottom not side by side*/
+}
+
+.stamp {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+    font-family:'EB Garamond', serif;
+    font-weight: 200;
+}
+
+h2 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.btn {
+    font-family:'EB Garamond', serif;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgb(89, 73, 45);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 50px;
+    border-radius: 20px;
+    transition: all 1s; /*makes the hover transition last 1 second*/
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    font-size: 80px;
+    background-image: url(images/IMG_2207.JPG);
+    background-size: contain;
+    padding: 10px 20px;
+    margin: 50px;
+    border-radius: 50px;
+}
+
+/*table of contents pg 1*/
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+    }
+    
+    /*for each trip do arrival and departure date on the plane ticket as the dates i went*/
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 2; 
+        background-image: url(images/airlines-boarding-pass-isolated-ticket-template-vector-passenger-card-travel-document-from-london-to-new-york-2EYTFK4.jpg);
+        flex-direction: column;
+        position: relative;
+        height: 300px;
+
+    }
+
+    .div2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        background-image: url(images/IMG_2200.jpg);
+        position: relative;
+    }
+
+    .div3 {
+         grid-area: 2 / 1 / 3 / 2; 
+         background-image: url(images/IMG_2197\ \(1\).jpg);
+         position: relative;
+         height: 250px;
+    }
+
+    .div4 { 
+        grid-area: 2 / 2 / 3 / 3;
+        background-image: url(images/IMG_2198.jpg);
+        position: relative;
+      
+    }
+
+    .div5 { 
+        grid-area: 3 / 1 / 4 / 2; 
+        background-image: url(images/IMG_2204.jpg);
+        position: relative;
+        height: 250px;
+    }
+
+    .div6 { 
+        grid-area: 3 / 2 / 4 / 3; 
+        background-image: url(images/IMG_2202.jpg);
+        position: relative;
+    }
+
+    .div7 { 
+        grid-area: 4 / 1 / 5 / 2; 
+        background-image: url(images/IMG_2205.jpg);
+        position: relative;
+        height: 300px;
+    }
+
+    .div8 { 
+        grid-area: 4 / 2 / 5 / 3; 
+        background-image: url(images/IMG_2200.jpg);
+        position: relative;
+    }
+
+    .box{
+        background-color: rgba(139, 114, 70, 0.46);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 90;
+        background-size: contain;
+        background-repeat: no-repeat
+    }
+
+
+    .londonbtn {
+        font-family: 'Great Vibes', cursive;
+        font-size: 30px;
+        color: white;
+        background-color: rgb(89, 73, 45);
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 50px;
+        border-radius: 20px;
+        transition: all 1s; /*makes the hover transition last 1 second*/
+        position: relative;
+        z-index: 98;
+    }
+
+    .londonbtn:hover {
+        color: rgb(89, 73, 45);
+        background-color: white;
+        font-size: 50px;
+    }
+
+
+
+/*table of contents page*/
+
+
+
+
+/*london page*/
+
+#page1-london .trip {
+    background-image: url(images/vintage-postcard-with-the-big-ben-in-london-vector-21117754.jpg);
+    height: 400px;
+    top: 50px;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    }
+    
+#page1-london .summary {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(246, 232, 200);
+    background-position: center;
+    position: relative;
+    padding: 50px;
+}
+
+p {
+    text-align: left;
+    color: rgb(89, 73, 45);
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+}
+
+h3 {
+    text-align: left;
+    color: rgb(89, 73, 45);
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+}
+
+
+#page1-london .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+    }
+    
+   #page1-london .galdiv1 {
+         grid-area: 1 / 1 / 2 / 2; 
+         background-image: url(images/FullSizeRender\ \(2\).jpg);
+         background-size: contain;
+         height: 500px;
+         bottom: 5px;
+        }
+
+    #page1-london .galdiv2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        background-image: url(images/IMG-5072.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+    #page1-london .galdiv3 { 
+        grid-area: 1 / 3 / 2 / 4;
+        background-image: url(images/unnamed.jpg); 
+        background-size: cover;
+        height: 500px;
+    }
+
+ /*rome*/
+
+ #page2-rome .trip {
+    background-image: url(images/rome\ heading.jpg);
+    height: 400px;
+    top: 50px;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    }
+    
+#page2-rome .summary {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(246, 232, 200);
+    background-position: center;
+    position: relative;
+    padding: 50px;
+}
+
+#page2-rome .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+    }
+    
+   #page2-rome .galdiv1 {
+         grid-area: 1 / 1 / 2 / 2; 
+         background-image: url(images/IMG_5928.jpg);
+         background-size: contain;
+         height: 500px;
+         bottom: 5px;
+        }
+
+    #page2-rome .galdiv2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        background-image: url(images/IMG_1585.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+    #page2-rome .galdiv3 { 
+        grid-area: 1 / 3 / 2 / 4;
+        background-image: url(images/IMG_7978.jpg); 
+        background-size: cover;
+        height: 500px;
+    }
+
+
+/*madrid*/
+
+#page3-madrid .trip {
+    background-image: url(images/IMG_2211.jpg);
+    height: 400px;
+    top: 50px;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    }
+    
+#page3-madrid .summary {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(246, 232, 200);
+    background-position: center;
+    position: relative;
+    padding: 50px;
+}
+
+#page3-madrid .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+    }
+    
+#page3-madrid .galdiv1 {
+         grid-area: 1 / 1 / 2 / 2; 
+         background-image: url(images/IMG_7087.jpg);
+         background-size: cover;
+         height: 500px;
+         bottom: 5px;
+        }
+
+#page3-madrid .galdiv2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        background-image: url(images/IMG_8397.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+#page3-madrid .galdiv3 { 
+        grid-area: 1 / 3 / 2 / 4;
+        background-image: url(images/IMG_1992.jpg); 
+        background-size: cover;
+        height: 500px;
+    }
+
+
+
+
+
+/*copenhagen*/
+#page4-copenhagen .trip {
+    background-image: url(images/IMG_2216.JPG);
+    height: 400px;
+    top: 50px;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    }
+    
+#page4-copenhagen .summary {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(246, 232, 200);
+    background-position: center;
+    position: relative;
+    padding: 50px;
+}
+
+#page4-copenhagen .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+    }
+    
+#page4-copenhagen .galdiv1 {
+         grid-area: 1 / 1 / 2 / 2; 
+         background-image: url(images/5C7DF57F-8601-473E-A825-9CCF74DF5B01.JPG);
+         background-size: cover;
+         height: 500px;
+         bottom: 5px;
+        }
+
+#page4-copenhagen .galdiv2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        background-image: url(images/IMG_3144.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+#page4-copenhagen .galdiv3 { 
+        grid-area: 1 / 3 / 2 / 4;
+        background-image: url(images/IMG_9250.JPEG); 
+        background-size: cover;
+        height: 500px;
+    }
+
+
+
+
+/*paris*/
+#page5-paris .trip {
+    background-image: url(images/IMG_2212.JPG);
+    height: 400px;
+    top: 50px;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    }
+    
+#page5-paris .summary {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(246, 232, 200);
+    background-position: center;
+    position: relative;
+    padding: 50px;
+}
+
+#page5-paris .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+    }
+    
+#page5-paris .galdiv1 {
+         grid-area: 1 / 1 / 2 / 2; 
+         background-image: url(images/IMG_4233.jpg);
+         background-size: cover;
+         height: 500px;
+         bottom: 5px;
+        }
+
+#page5-paris .galdiv2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        background-image: url(images/IMG_0289.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+#page5-paris .galdiv3 { 
+        grid-area: 1 / 3 / 2 / 4;
+        background-image: url(images/IMG_4416.jpg); 
+        background-size: cover;
+        height: 500px;
+    }
+
+
+/*dublin*/
+#page6-dublin .trip {
+    background-image: url(images/IMG_2215.JPG);
+    height: 400px;
+    top: 50px;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    }
+    
+    #page6-dublin .summary {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(246, 232, 200);
+    background-position: center;
+    position: relative;
+    padding: 50px;
+}
+
+#page6-dublin .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+    }
+    
+    #page6-dublin .galdiv1 {
+         grid-area: 1 / 1 / 2 / 2; 
+         background-image: url(images/IMG_3827.jpg);
+         background-size: cover;
+         height: 500px;
+         bottom: 5px;
+        }
+
+    #page6-dublin .galdiv2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        background-image: url(images/IMG_3844.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+    #page6-dublin .galdiv3 { 
+        grid-area: 1 / 3 / 2 / 4;
+        background-image: url(images/IMG_3871.jpg); 
+        background-size: cover;
+        height: 500px;
+    }
+
+
+
+
+/*florence*/
+#page7-florence .trip {
+    background-image: url(images/IMG_2217.JPG);
+    height: 400px;
+    top: 50px;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    }
+    
+    #page7-florence .summary {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(246, 232, 200);
+    background-position: center;
+    position: relative;
+    padding: 50px;
+}
+
+#page7-florence .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+    }
+    
+    #page7-florence .galdiv1 {
+         grid-area: 1 / 1 / 2 / 2; 
+         background-image: url(images/IMG_5172.jpg);
+         background-size: cover;
+         height: 500px;
+         bottom: 5px;
+        }
+
+        #page7-florence .galdiv2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        background-image: url(images/IMG_5206.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+    #page7-florence .galdiv3 { 
+        grid-area: 1 / 3 / 2 / 4;
+        background-image: url(images/IMG_5174.jpg); 
+        background-size: cover;
+        height: 500px;
+    }
+
+
+
+/*florence*/
+#page8-dubrovnik .trip {
+    background-image: url(images/rome\ heading.jpg);
+    height: 400px;
+    top: 50px;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    }
+    
+#page8-dubrovnik .summary {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(246, 232, 200);
+    background-position: center;
+    position: relative;
+    padding: 50px;
+}
+
+#page8-dubrovnik .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+    }
+    
+    #page8-dubrovnik .galdiv1 {
+         grid-area: 1 / 1 / 2 / 2; 
+         background-image: url(images/6A5F4909-A9C3-455D-933B-3B44DCF8FA58.JPG);
+         background-size: cover;
+         height: 500px;
+         bottom: 5px;
+        }
+
+        #page8-dubrovnik .galdiv2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        background-image: url(images/IMG_6055\ \(1\).jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+
+    #page8-dubrovnik .galdiv3 { 
+        grid-area: 1 / 3 / 2 / 4;
+        background-image: url(images/IMG_6358\ \(1\).jpg); 
+        background-size: cover;
+        height: 500px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+
+
+
+/*this will go on every page except index bc it brings you back to the map*/
+footer {
+    background-color: rgb(89, 73, 45);
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    text-align: center;
+    width: 100vw;
+    padding: 4px;
+}
+
+footer p {
+    font-size: 20px;
+    font-family:'EB Garamond', serif;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: black;
+}
