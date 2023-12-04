@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.container div img {
+    height: 30vh;
+   /*flowers*/
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 2; 
+        background-image: url(images/computerimg.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 50vh;
+    }
+
+    .div2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        background-image: url(images/overviewimg.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 50vh;
+    }
+
+    .div3 {
+        grid-area: 2 / 1 / 3 / 2; 
+        background-image: url(images/classimg.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 50vh;
+        }
+
+
+    .div4 { 
+        grid-area: 2 / 2 / 3 / 3; 
+        background-image: url(images/thankyouimg.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 50vh;
+    }
+
+.div1-text, 
+.div2-text, 
+.div3-text, 
+.div4-text {
+    position:absolute;
+    top:0;
+    left: 0;
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+    margin: 10%;
+    display: none;
+}
+.front {
+    opacity:0.2;
+    z-index: 99;
+}
