@@ -1,0 +1,135 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    background-color: rgb(255, 255, 255);
+}
+
+.pop {
+    position: fixed;
+    height: 70px;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    background-color: white;
+}
+
+.letter-p {
+    position: fixed;
+    top: -8px;
+    left: 10px;
+    z-index: 99;
+    font-size: 60px;
+    color: rgb(128, 0, 85);
+    font-weight: 500;
+    font-family:'Crimson Text', serif;
+}
+
+/* TREE CONTENT STUFF -- */
+.treescontainer {
+    display: flex;
+    flex-direction:row;
+}
+.column {
+    width: 50%;
+    padding: 0 5%;
+}
+
+.left{
+    background-color: rgb(195, 194, 194);
+    padding: 0;
+
+}
+
+h1 {
+    color: white;
+    margin-top: .25%;
+    font-size: 120px;
+    margin-left: 0;
+    text-align: center;
+}
+
+h5 {
+    color: rgb(4, 78, 58);
+    margin-top: 30%;
+    font-size: 40px;
+    margin-left: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h6 {
+    color: white;
+    margin-top: .5%;
+    font-size: 20px;
+    margin-left: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(4, 78, 58);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 1s; /*makes the hover transition last 1 second*/
+    margin-top: 200px;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lpine {
+    background-image:url(images/IMG_3071.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    height: 70vh;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+h3 {
+    font-style: italic;
+    text-align:center;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #cccccc;
+}
+.tree-text {
+    padding: 20px;
+    font-size: 15px;
+    display: none;
+}
+.bold {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(128, 0, 85);
+}
+
+li {
+    list-style-type: none;
+}
